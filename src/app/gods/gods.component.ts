@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { God } from '../god';
+import { GODS } from '../mock-gods';
 
 @Component({
   selector: 'app-gods',
@@ -7,13 +8,17 @@ import { God } from '../god';
   styleUrls: ['./gods.component.css']
 })
 export class GodsComponent implements OnInit {
-  god: God = {
-    id: 1,
-    name: 'Zeus'
-  };
+  gods = GODS;
+
+  selectedGod: God;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onSelect(god: God): void {
+    this.selectedGod = god;
   }
 
 }
