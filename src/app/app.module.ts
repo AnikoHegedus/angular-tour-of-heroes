@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';// <-- NgModel lives here
+import { HeroService } from './hero.service';
 
 
 import { AppComponent } from './app.component';
@@ -22,7 +23,7 @@ import { GodDetailComponent } from './god-detail/god-detail.component';
     BrowserModule,
     FormsModule
   ],
-  providers: [],
+  providers: [HeroService],
   bootstrap: [AppComponent]
 })
 
