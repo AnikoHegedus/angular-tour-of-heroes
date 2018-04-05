@@ -15,4 +15,10 @@ export class GodService {
     return of (GODS);
   }
 
+  getGod(id: number): Observable<God> {
+    // Todo: send the message _after_ fetching the god
+    this.messageService.add(`GodService: fetched god id=${id}`);
+    return of(GODS.find(god => god.id === id));
+  }
+
 }

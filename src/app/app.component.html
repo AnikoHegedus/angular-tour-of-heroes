@@ -1,6 +1,10 @@
 <h1> {{ title }} </h1>
 <div class="flex-container">
-  <app-heroes class="list"></app-heroes>
-  <app-gods class="list"></app-gods>
+  <nav><a routerLink="/dashboard">Dashboard</a></nav>
+  <nav><a routerLink="/heroes">Heroes</a></nav>
+  <nav><a routerLink="/gods">Gods</a></nav>
 </div>
+
+
+  <router-outlet class="list"></router-outlet>
 <app-messages></app-messages>
