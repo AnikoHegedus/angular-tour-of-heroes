@@ -6,11 +6,12 @@ h1 {
     display: flex;
     justify-content: space-around;
 }
+
 /* AppComponent's private CSS styles */
 h1 {
-    font-size: 1.2em;
+    font-size: 2em;
     color: #999;
-    margin-bottom: 0;
+    margin-bottom: 3%;
   }
   h2 {
     font-size: 2em;
